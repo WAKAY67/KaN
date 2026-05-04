@@ -2,7 +2,7 @@ import pygame as pg
 
 defeat_enemy=0
 shoot_cooldown = 0
-shoot_rate = 15
+shoot_rate = 14
 bullets = []
 speed_bullets = 10
 bullets_size = 10
