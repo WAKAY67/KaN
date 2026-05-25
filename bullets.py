@@ -39,7 +39,8 @@ def collision_check(enemies):
         for bullet in bullets:
             if bullet[0].colliderect(enemy):
                 bullets.remove(bullet)
-                enemies.remove(enemy)
+                enemies.remove(enemy) 
+                
                 defeat_enemy+=1
 
                 
@@ -47,3 +48,10 @@ def update_cooldown():
     global shoot_cooldown
     if shoot_cooldown > 0:
         shoot_cooldown -= 1
+
+def respawn_bullets():
+    global defeat_enemy
+    global shoot_cooldown
+    bullets.clear()
+    defeat_enemy=0
+    shoot_cooldown=0

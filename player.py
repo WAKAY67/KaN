@@ -24,3 +24,7 @@ def update_player():
 
 def draw_player(screen):
     screen.blit(player_image,player_rect)
+
+def restart_player():
+    player_rect.x=WIDTH//2
+    player_rect.y=HEIGHT//2
